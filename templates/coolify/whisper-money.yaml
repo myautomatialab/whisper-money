@@ -12,7 +12,7 @@ services:
             - APP_NAME=Whisper Money
             - APP_ENV=production
             - APP_DEBUG=false
-            - APP_URL=${SERVICE_FQDN_WHISPERMONEY_80}
+            - APP_URL=${SERVICE_FQDN_WHISPERMONEY}
             # APP_KEY is auto-generated on first startup if not provided
             - DB_CONNECTION=mysql
             - DB_HOST=mysql
