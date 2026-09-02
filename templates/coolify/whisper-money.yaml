@@ -8,11 +8,11 @@ services:
     whisper-money:
         image: ghcr.io/whisper-money/whisper-money:latest
         environment:
-            - SERVICE_FQDN_WHISPERMONEY_80
+            - SERVICE_FQDN_WHISPER_MONEY
             - APP_NAME=Whisper Money
             - APP_ENV=production
             - APP_DEBUG=false
-            - APP_URL=${SERVICE_FQDN_WHISPERMONEY}
+            - APP_URL=${SERVICE_URL_WHISPER_MONEY}
             # APP_KEY is auto-generated on first startup if not provided
             - DB_CONNECTION=mysql
             - DB_HOST=mysql
